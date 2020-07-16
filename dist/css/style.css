@@ -496,6 +496,96 @@ html, body {
   }
 }
 
+.app {
+  background: url(../images/home-bg.png) no-repeat center center fixed;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.app .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app__wrapper {
+  width: 50%;
+}
+
+.app__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.app__title {
+  color: #233148;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.app__subtitle {
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.app__app-buttons {
+  margin-top: 20px;
+}
+
+.app__app-button {
+  margin-right: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .app__wrapper {
+    margin: 0 10px;
+  }
+  .app__subtitle {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app__wrapper:nth-child(1) {
+    display: none;
+  }
+  .app__wrapper {
+    width: 100%;
+  }
+  .app__title {
+    text-align: center;
+  }
+  .app__subtitle {
+    text-align: center;
+  }
+  .app__app-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;

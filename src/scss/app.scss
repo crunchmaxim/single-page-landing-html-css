@@ -1,0 +1,83 @@
+.app {
+    background: url(../images/home-bg.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        width: 50%;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__title {
+        color: #233148;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        margin-top: 40px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    &__app-buttons {
+        margin-top: 20px;
+    }
+
+    &__app-button {
+        margin-right: 12px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        &__wrapper {
+            margin: 0 10px;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .app {
+        &__wrapper:nth-child(1) {
+            display: none;
+        }
+
+        &__wrapper {
+            width: 100%;
+        }
+
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__app-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+}
