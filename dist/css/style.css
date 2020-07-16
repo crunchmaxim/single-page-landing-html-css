@@ -544,7 +544,6 @@ html, body {
 .app__app-button {
   margin-right: 12px;
   margin-top: 20px;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -651,6 +650,65 @@ html, body {
   .about__button {
     margin: 0 auto;
     margin-top: 20px;
+  }
+}
+
+.footer {
+  height: 100px;
+  background-color: #233148;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.footer__year {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__link {
+  display: block;
+  margin-left: 60px;
+}
+
+@media (max-width: 576px) {
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__wrapper {
+    margin-top: 20px;
+  }
+  .footer__link {
+    margin: 0 20px;
   }
 }
 
