@@ -6,6 +6,7 @@ const scss = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
+const fileinclude = require('gulp-file-include');
 
 const server = () => {
     browserSync.init({
@@ -21,6 +22,7 @@ const clean = () => {
 
 const html = () => {
     return src("src/index.html")
+    .pipe(fileinclude())
         .pipe(dest("dist/"))
         .pipe(browserSync.stream())
 }
