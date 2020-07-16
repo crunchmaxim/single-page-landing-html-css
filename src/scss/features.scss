@@ -1,0 +1,150 @@
+.features {
+    padding: 85px 0;
+    height: 400px;
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__wrapper {
+        margin: 0 70px;
+    }
+
+    &__title {
+        float: right;
+        color: #233148;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    &__subtitle {
+        float: right;
+        text-align: right;
+        max-width: 459px;
+        margin-top: 50px;
+        color: #6a6d89;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+    &__button {
+        float: right;
+        margin-top: 30px;
+        width: 201px;
+        height: 51px;
+        background-color: #33d2fd;
+        border: none;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__item {
+        margin: 10px auto;
+        padding: 30px;
+        width: 543px;
+        box-shadow: 0 6px 9px rgba(35, 39, 47, 0.1);
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #33d2fd;
+            .features__item-text {
+                display: block;
+            }
+        }
+    }
+
+    &__item-info {
+        margin-left: 20px;
+    }
+
+    &__item-title {
+        color: #233148;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__item-text {
+        display: none;
+        margin-top: 10px;
+        max-width: 354px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .features {
+
+        &__wrapper {
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .features {
+
+        &__title {
+            font-size: 26px;
+        }
+
+        &__subtitle {
+            margin-top: 20px;
+        }
+
+        &__item {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        height: 100%;
+        padding: 20px 0;
+
+        .container {
+            flex-direction: column;
+        }
+
+        &__wrapper {
+            margin: 0 auto;
+        }
+
+        &__title {
+            float: none;
+            text-align: center;
+        }
+
+        &__subtitle {
+            float: none;
+            text-align: center;
+        }
+
+        &__button {
+            float: none;
+            display: block;
+            margin: 30px auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .features {
+        &__item {
+            width: 200px;
+        }
+    }
+}
