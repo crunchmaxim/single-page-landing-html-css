@@ -138,6 +138,118 @@ html, body {
   }
 }
 
+.advantages {
+  padding: 100px 0;
+  background-color: #fafafc;
+}
+
+.advantages .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 614px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages__item {
+  margin: 10px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  max-width: 271px;
+  max-height: 322px;
+  -webkit-box-shadow: 0 6px 9px rgba(35, 39, 47, 0.1);
+          box-shadow: 0 6px 9px rgba(35, 39, 47, 0.1);
+}
+
+.advantages__item-title {
+  color: #233148;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.advantages__item-text {
+  margin-top: 30px;
+  text-align: center;
+  width: 214px;
+  color: #6a6d89;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@media (max-width: 992px) {
+  .advantages {
+    padding: 25px 0;
+  }
+  .advantages__item {
+    max-width: 170px;
+  }
+  .advantages__item-title {
+    margin-top: 15px;
+  }
+  .advantages__item-text {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages__image {
+    display: none;
+  }
+  .advantages__item-title {
+    font-size: 16px;
+  }
+  .advantages__item-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .advantages__item {
+    max-width: 260px;
+  }
+  .advantages__item-title {
+    font-size: 18px;
+  }
+  .advantages__item-text {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
