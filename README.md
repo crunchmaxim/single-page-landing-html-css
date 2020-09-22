@@ -1,8 +1,6 @@
 Верстка одностраничного сайта.
 
-Онлайн версию сайта можно посмотреть тут: https://crunchmaxim.github.io/landing1/dist/
-
-Ссылка на репозиторий GitHub: https://github.com/crunchmaxim/landing1
+Онлайн версию сайта можно посмотреть тут: https://crunchmaxim.github.io/single-page-landing-html-css/dist/
 
 В качестве сборщика проекта был использован Gulp со следующими плагинами:
 - browser-sync - https://www.npmjs.com/package/browser-sync. Запуск локального сервера, перезапуск сервера при внесении изменений.
